@@ -21,11 +21,14 @@ class Tendril
   {
     int startX = myX;
     int startY = myY;
-    stroke(0,0,255);
-    if(myNumSegments<16&&myNumSegments>4)
-      stroke(0,255,0);
+    stroke( #228B22);
+    strokeWeight(1.5);
+    if(myNumSegments<16&&myNumSegments>4){
+      stroke(200);
+      strokeWeight(2);
+    }
     if(myNumSegments<5)
-      stroke(255,0,0);
+      stroke(230);
       
     for(int i = 0; i < myNumSegments; i ++){
       myAngle += (Math.random()*0.4)-0.2;
@@ -37,5 +40,6 @@ class Tendril
     }
     if(myNumSegments >= 3)
       new Cluster(myNumSegments/3, startX, startY);
+    
   }
 }
