@@ -5,7 +5,6 @@ public void setup()
   background(255);
   stroke(0);
   frameRate(2);
-  //noLoop();
 }
 
 public void draw()
@@ -18,5 +17,4 @@ public void draw()
 }
 public void mousePressed()
 {
-  redraw();
 }
